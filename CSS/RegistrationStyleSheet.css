@@ -1,0 +1,136 @@
+﻿body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to bottom right, #000, #3498db);
+    padding: 0;
+    background-color: #575555;
+    margin: 0;
+    color: white;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 1);
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0);
+    padding: 10px;
+    text-align: right;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 1000;
+}
+
+    nav button {
+        color: #fff;
+        text-decoration: none;
+        padding: 10px;
+        margin: 0 5px;
+        background-color: rgba(0, 0, 0, 1);
+        border: none;
+        cursor: pointer;
+    }
+    nav :hover{
+        background-color: #0b4985;
+    }
+
+.container {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 20px;
+    /*background-color: #102b45;*/
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+fieldset {
+    border-width: 5px;
+    border-color: white;
+    border-style: ridge;
+    border-radius:10px;
+    width: 700px;
+
+}
+
+h2 {
+    text-align: center;
+}
+
+.registration-form {
+    margin-right: -20px;
+    margin-bottom: 20px;
+    /*background-image: url('../Images/427266.jpg');*/
+    background-color: black;
+    padding: 20px;
+    border-radius: 5px;
+    color: white;
+}
+
+    .registration-form h2 {
+        color: White;
+    }
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: white;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    background-color:aliceblue;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+    .form-row > div {
+        width: calc(50% - 10px);
+        box-sizing: border-box;
+        margin-bottom: 10px;
+    }
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+    .checkbox-group input {
+        margin-right: 5px;
+    }
+
+
+button {
+    background-color: #333;
+    color: white;
+    padding: 10px 15px;
+    border: ridge;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+}
+
+    button:hover {
+        background-color: #0b4985;
+    }
+
+.submit, .reset {
+    background-color: black;
+    width: 950px;
+}

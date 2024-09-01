@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Time Odyssey - Login</title>
+    <link rel="icon" type="image/x-icon" href="../Images/pngwing.com.ico" />
+    <link rel="stylesheet" href="styles.css">
+    <link href="../CSS/LoginStyleSheet.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <h1>Space Time Odyssey</h1>
+    </header>
+
+    <nav>
+        <button onclick="location.href='index.html'">Home</button>
+        <button onclick="location.href='registration.html'">Register</button>
+        <button onclick="location.href='login.html'">Login</button>
+    </nav>
+
+    <div class="container">
+        
+        <section id="login" class="login-form">
+            <h2>Login</h2>
+            <form action="your_login_handler.php" method="post">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="abc@mail.com">
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit">Login</button>
+                <br />
+
+                <div class="login-options">
+                    <button onclick="location.href='https://www.facebook.com/'">Login with Facebook</button>
+                    <button class="google" onclick="location.href='https://www.google.com/'">Login with Google</button>
+                </div>
+            </form>
+        </section>
+    </div>
+</body>
+
+</html>

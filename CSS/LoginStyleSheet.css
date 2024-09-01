@@ -1,0 +1,103 @@
+﻿body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to bottom right, #000, #3498db);
+    padding: 0;
+    background-color: #575555;
+    margin: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0);
+    padding: 10px;
+    text-align: right;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 1000;
+}
+
+    nav button {
+        color: #fff;
+        text-decoration: none;
+        padding: 10px;
+        margin: 0 5px;
+        background-color: rgba(0, 0, 0, 1);
+        border: none;
+        cursor: pointer;
+    }
+
+.container {
+    max-width: 400px;
+    margin: 60px auto;
+    padding: 20px;
+    background-color: ghostwhite;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+}
+
+.login-form {
+    margin-bottom: 20px;
+    background-color: black;
+    padding: 20px;
+    border-radius: 5px;
+    color: white;
+}
+
+    .login-form h2 {
+        color: white;
+    }
+
+label {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 5px;
+    color: white;
+}
+
+input {
+    width: calc(100% - 10px);
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.login-options {
+    text-align: center;
+}
+
+    .login-options button {
+        background-color: #3b5998;
+        color: white;
+    }
+
+        .login-options button.google {
+            background-color: #4285f4;
+            color: white;
+        }

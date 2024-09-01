@@ -1,0 +1,143 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StarGazing</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="../CSS/IndexStyleSheet.css" rel="stylesheet" />
+
+    <style>
+        body {
+            position: relative;
+            
+        }
+
+        .content-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: start;
+            gap: 10px; 
+        }
+        .solar-system {
+            flex:1;
+            position: relative;
+            width: 500px;
+            height: 500px;
+        }
+        .solar-system-info {
+            flex: 1;
+            max-width: 500px;
+        }
+
+        .sun {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 50px;
+            height: 50px;
+            background-color: yellow;
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .orbit {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: var(--orbit-size);
+            height: var(--orbit-size);
+            border: 1px solid #fff;
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            animation: orbitAnimation var(--orbit-duration) linear infinite;
+        }
+
+        .planet {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 13px;
+            height: 13px;
+            background-color: #c5d0da;
+            border-radius: 50%;
+            transform: translateX(-50%);
+        }
+
+        @keyframes orbitAnimation {
+            0% {
+                transform: translate(-50%, -50%) rotate(0deg);
+            }
+
+            100% {
+                transform: translate(-50%, -50%) rotate(360deg);
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Space Time Odyssey</h1>
+    </header>
+
+    <nav>
+        <button onclick="location.href='index.html'">Home</button>
+        <button onclick="location.href='registration.html'">Register</button>
+        <button onclick="location.href='login.html'">Login</button>
+        <button onclick="location.href='SpaceExploration.html'">Space Exploration</button>
+        <button onclick="location.href='https://www.space.com/the-universe'">The Universe</button>
+        <button onclick="location.href='Stargazing.html'">Stargazing</button>
+        <button onclick="location.href='https://www.nasa.gov/missions/meet-nasas-orion-spacecraft/'">Launches & Spacecraft</button>
+        <button onclick="location.href='https://science.nasa.gov/resource/phases-of-the-moon-2/'">The Moon</button>
+        <div class="dropdown">
+            <button class="dropbtn">More</button>
+            <div class="dropdown-content">
+                <a href="https://www.nasa.gov/">Nasa</a>
+                <a href="https://www.spacex.com/">SpaceX</a>
+                <a href="https://www.virgingalactic.com/">Virgin Galactic</a>
+            </div>
+        </div>
+    </nav>
+    <h2> Solar System by Svg: </h2>
+    <div class="content-wrapper">
+        <div class="solar-system">
+
+            <br />
+            <div class="sun"></div>
+            <div class="orbit" style="--orbit-size:120px; --orbit-duration:10s;">
+                <div class="planet"></div>
+            </div>
+            <div class="orbit" style="--orbit-size:180px; --orbit-duration:15s;">
+                <div class="planet"></div>
+            </div>
+            <div class="orbit" style="--orbit-size:240px; --orbit-duration:20s;">
+                <div class="planet"></div>
+            </div>
+            <div class="orbit" style="--orbit-size:300px; --orbit-duration:25s;">
+                <div class="planet"></div>
+            </div>
+            <div class="orbit" style="--orbit-size:360px; --orbit-duration:30s;">
+                <div class="planet"></div>
+            </div>
+            <div class="orbit" style="--orbit-size:420px; --orbit-duration:35s;">
+                <div class="planet"></div>
+            </div>
+
+        </div>
+        <div class="solar-system-info">
+            <h3>About Our Solar System</h3>
+            <p>
+                Our Solar System is a vast and dynamic ensemble of celestial bodies, anchored by the Sun, a luminous star that provides the essential light and warmth to sustain life on Earth. Comprising eight unique planets, numerous moons, dwarf planets, comets, asteroids, and the mysterious Kuiper Belt and Oort Cloud, the Solar System is a testament to the complexity and beauty of the cosmos. The inner Solar System houses the terrestrial planets—Mercury, Venus, Earth, and Mars—rocky worlds with solid surfaces. Beyond the asteroid belt lie the gas giants Jupiter and Saturn, followed by the ice giants Uranus and Neptune, each encircled by intricate ring systems and numerous moons, each with its own peculiarities and mysteries. This cosmic neighborhood, formed about 4.6 billion years ago from the gravitational collapse of a giant interstellar molecular cloud, continues to captivate scientists and astronomers with its endless wonders, holding keys to understanding the origins of our planet and the potential for life beyond Earth. Through ambitious space exploration missions and advanced astronomical research, we continue to uncover the secrets of our Solar System, expanding our knowledge and appreciation of the place we call home in the universe.
+            </p>
+        </div>
+    </div>
+
+        <footer>
+            <p>Designed and developed by No-one | © 2024 Space Time Odyssey. All rights reserved.</p>
+        </footer>
+
+</body>
+</html>

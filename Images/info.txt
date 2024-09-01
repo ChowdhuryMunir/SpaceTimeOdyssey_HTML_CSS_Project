@@ -1,0 +1,18 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: belligerent
+font link: https://www.fontmonkey.com/archive1.php
+font author: P.D. Magnus
+font author site: https://www.fontmonkey.com/
+
+
+icon designer: Larisa Skosyrska
+icon designer link: /Lara.Skosyrska
+        
+
+fontColor: {"hex":"#0ED8E8"}
+bgColor: {"hex":"#010C1A"}
+iconColor: {"hex":"#0ED8E8"}
+
+      
